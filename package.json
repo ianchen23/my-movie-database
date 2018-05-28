@@ -1,0 +1,25 @@
+{
+  "name": "movie_search_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "request": "^2.87.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianchen23/my-movie-database.git"
+  },
+  "author": "ianchen23",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ianchen23/my-movie-database/issues"
+  },
+  "homepage": "https://github.com/ianchen23/my-movie-database#readme"
+}
