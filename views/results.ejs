@@ -1,0 +1,23 @@
+<% include partials/header %>
+<div class="container">
+    <div class="result">My Movie Database</div>
+    <form action="/results" method="GET" class="result_search">
+        <input type="text" name="keyword" placeholder="Search keyword" class="form-control" autofocus>
+        <!--<input type="submit" value="Search">-->
+    </form>
+    <hr>
+    <div class="row">
+        <% data.forEach(function(movie){ %>
+            <% var link = "https://www.imdb.com/title/" + movie["imdbID"] %>;
+            <% var img = movie["Poster"] %>;
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <a href= <%= link %>><img src= <%= img %>></a>
+                    <p class="title"><%= movie["Title"] + " (" + movie["Year"] + ")"%></p>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+<% include partials/footer %>
