@@ -26,6 +26,6 @@ app.get("/results", function(req, res){
 
 
 // start server
-app.listen(process.env.PORT, function(){
+app.listen(process.env.PORT, process.env.IP, function(){
     console.log("Server is running!");
 });
