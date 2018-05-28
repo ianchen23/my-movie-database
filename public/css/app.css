@@ -11,6 +11,11 @@ body {
     margin: auto;
 }
 
+a.result:hover {
+    text-decoration: none;
+    color: rgb(245, 197, 24);
+}
+
 hr {
 	height: 10px;
 	border: 0;

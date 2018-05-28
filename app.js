@@ -16,9 +16,9 @@ app.get("/results", function(req, res){
     var keyword = req.query.keyword;
     request("http://www.omdbapi.com/?s=" + keyword + "&apikey=thewdb", function(error, response, body){
         if (!error && response.statusCode == 200) {
-            var data = JSON.parse(body);
+            var data = JSON.parse(body)["Search"];
             // res.send(data);
-            res.render("results", {data: data["Search"]});
+            res.render("results", {data: data});
         }
     });
 });
